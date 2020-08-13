@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/item_layout"
+            android:id="@+id/layoutPersonaje1"
+            />
+        <include
+            layout="@layout/item_layout"
+            android:id="@+id/layoutPersonaje2"
+            />
+        <include
+            layout="@layout/item_layout"
+            android:id="@+id/layoutPersonaje3"
+            />
+        <include
+            layout="@layout/item_layout"
+            android:id="@+id/layoutPersonaje4"
+            />
+        <include
+            layout="@layout/item_layout"
+            android:id="@+id/layoutPersonaje5"
+            />
+        <include
+            layout="@layout/item_layout"
+            android:id="@+id/layoutPersonaje6"
+            />
+    </LinearLayout>
+
+</ScrollView>
