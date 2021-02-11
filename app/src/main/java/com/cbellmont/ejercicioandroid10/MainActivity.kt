@@ -1,5 +1,6 @@
 package com.cbellmont.ejercicioandroid10
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -40,6 +41,12 @@ class MainActivity : AppCompatActivity() {
         item.iwFoto.setImageResource(personaje.image)
         item.tvNombre.text = personaje.nombre
         item.tvRaza.text = personaje.raza
+
+        item.iwFoto.setOnClickListener {
+            val intent = Intent(this, PersonajeActivity::class.java)
+            intent.putExtra("VALOR1", personaje.nombre)
+            startActivity(intent)
+        }
     }
 
 }
