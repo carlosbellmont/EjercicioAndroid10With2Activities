@@ -44,7 +44,11 @@ class MainActivity : AppCompatActivity() {
 
         item.iwFoto.setOnClickListener {
             val intent = Intent(this, PersonajeActivity::class.java)
-            intent.putExtra("VALOR1", personaje.nombre)
+            intent.putExtra(PersonajeActivity.VALOR1, personaje.nombre)
+            intent.putExtra(PersonajeActivity.VALOR2, personaje.raza)
+            intent.putExtra(PersonajeActivity.VALOR3, personaje.image)
+            intent.putExtra(PersonajeActivity.VALOR4, personaje.esBueno)
+
             startActivity(intent)
         }
     }
